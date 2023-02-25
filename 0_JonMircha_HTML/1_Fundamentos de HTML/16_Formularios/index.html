@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha"
+    />
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+  </head>
+  <body>
+    <h2>FORMULARIOS</h2>
+
+    <input type="text" />
+    <br />
+    <br />
+    <input type="checkbox" />
+    <br />
+    <br />
+    <input type="radio" />
+    <br />
+    <br />
+    <input type="date" />
+    <br />
+    <br />
+    <input type="color" />
+    <br />
+    <br />
+    <input type="button" value="Botón" />
+    <br />
+    <br />
+    <input type="submit" />
+    <br />
+    <br />
+    <input type="reset" />
+    <br />
+    <br />
+    <input type="file" multiple />
+    <br />
+    <br />
+    <input type="hidden" name="idioma" value="es" />
+    <br />
+    <br />
+    <input type="email" />
+    <br />
+    <br />
+    <input type="number" />
+    <br />
+    <br />
+    <input type="password" />
+    <br />
+    <br />
+    <input type="search" />
+    <br />
+    <br />
+    <textarea cols="30" rows="10">Esto es un textarea</textarea>
+    <br /><br />
+    <select name="" id="">
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+    </select>
+    <br /><br />
+    <select name="" id="" multiple>
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+    </select>
+    <br /><br />
+    <input type="text" value="IvanCalvo" readonly disabled />
+    <br /><br />
+    <input type="text" placeholder="Escribe tu nombre" />
+    <br /><br />
+    <br /><br />
+    <form action="https://jonmircha.com" method="POST" autocomplete="off">
+      <label for="usuario">Usuario:</label>
+      <input
+        type="text"
+        name="usuario"
+        pattern="^[A-Za-z]+$"
+        title="El campo solo acepta letras"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br />
+      <input type="submit" />
+      <br />
+      <input type="reset" />
+    </form>
+    <br /><br />
+    <form>
+      <p>Elige tu idioma:</p>
+      <select name="idioma" id="">
+        <option value="">Elige una opción</option>
+        <option value="es" selected>Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+      </select>
+      <br />
+      <p>Elige tu lenguaje de programación</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js" />
+      <label for="radio-js">JavaScript</label>
+      <br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <br /><br />
+    <form>
+      <p>Elige tu lenguaje de programación</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js" checked />
+      <label for="radio-js">JavaScript</label><br />
+      <input type="radio" name="lenguaje" id="radio-py" value="py" />
+      <label for="radio-py">Python</label><br />
+      <input type="radio" name="lenguaje" id="radio-php" value="php" />
+      <label for="radio-php">PHP</label><br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+    <br /><br />
+    <form>
+      <p>Elige tus intereses</p>
+      <label>
+        <input type="checkbox" name="intereses" value="deportes"/>
+        Deportes
+      </label><br>
+      <label>
+        <input type="checkbox" name="intereses" value="finanzas"/>
+        Finanzas
+      </label><br>
+      <label>
+        <input type="checkbox" name="intereses" value="salud"/>
+        Salud
+      </label><br>
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
