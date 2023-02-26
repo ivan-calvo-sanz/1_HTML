@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha"
+    />
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+  </head>
+  <body>
+    <h2>FORMULARIO DE CONTATO</h2>
+    <form action="https://formsubmit.co/ivan.calvo.sanz@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="Nombre solo acepta letras y espacios en blanco" /><br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required title="Formato de correo inválido"><br>
+    <br>
+    <textarea name="comentarios" id="" cols="30" rows="10" required></textarea><br>
+    <input type="submit">
+    </form>
+  </body>
+</html>
+
+

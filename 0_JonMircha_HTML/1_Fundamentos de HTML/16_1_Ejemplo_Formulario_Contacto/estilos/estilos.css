@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+}
